@@ -32,8 +32,8 @@ def get(s, box):
 		recv_data = recv_data[msg_size:]
 		frame = pickle.loads(frame_data)
 
-		if time.time() - timestamp > 1 or drawer.is_alive():
-			continue
+		# if time.time() - timestamp > 1 or drawer.is_alive():
+		# 	continue
 
 		def _draw(f):
 			# Draw other person
